@@ -1,0 +1,13 @@
+<form action="/Uzie_Site/add" method = "POST">
+     {% csrf_token %}
+    <label for= "Name">Vehicle Name: </label>
+    <br>
+    <br>
+    <input type = "text" name="Name" id="Name" placeholder = "Vehicle name">
+    <br>
+     <br>
+    <input type = "text" name="year" id="year" placeholder = "Vehicle year">
+    <br>
+    <br>
+    <input type ="submit" value = "Add">
+</form>

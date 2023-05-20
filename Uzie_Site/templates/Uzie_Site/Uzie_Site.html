@@ -5,9 +5,10 @@
 </head>
 <body>
    <h1>Vehicles</h1>
-      <ul>{% for Uzie_Site in Uzie_Site %}
-         <li>{{Uzie_Site.Name}}</li>
+      <ul>{% for Vehicle in Uzie_Site %}
+         <li><a href={{Vehicle.id}}>{{Vehicle.Name}}</a></li>
          {% endfor %}
    </ul>
+ <a href="/Uzie_Site/add">Add a Vehicle</a>
 </body>
 </html>

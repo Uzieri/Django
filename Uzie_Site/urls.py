@@ -20,5 +20,10 @@ from Uzie_Site import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
-    path('Uzie_Site/', views.Uzie_Site )
+    path('Uzie_Site/', views.Uzie_Site ),
+    path('Uzie_Site/<int:id>', views.detail),
+    path('Uzie_Site/add', views.add),
+    path('Uzie_Site/delete/<int:id>', views.delete)
+
+
 ]
